@@ -1,0 +1,50 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Mobile Menu Dynamics */
+.show {
+  @apply 
+    right-0 
+    overflow-hidden
+    pointer-events-auto
+}
+
+.blue-underline {
+  @apply after:block
+        after:h-0.5 
+        after:w-1/2
+        after:bg-micro-blue
+        after:absolute 
+        after:left-1/2 
+        after:-bottom-1.5
+        after:-translate-x-1/2 
+        after:scale-x-0
+        origin-center
+        after:duration-200
+        after:transition-transform 
+        hover:after:scale-x-100
+}
+.arrow-translate-right {
+  @apply group-hover:translate-x-0.5 
+         transition-transform 
+         duration-300
+         mr-2;
+}
+.arrow-top-right {
+  @apply transition 
+         duration-200 
+         transform 
+         -rotate-45 
+         group-hover:translate-x-px 
+         group-hover:-translate-y-px;
+}
+.btn {
+  @apply flex  
+         font-mono 
+}
+.no-scroll { @apply overflow-y-hidden h-screen }
